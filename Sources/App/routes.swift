@@ -1,14 +1,15 @@
 import Fluent
 import Vapor
+import SubdomainHandler
 
 func routes(_ app: Application) throws {
-    app.get { req async throws in
-        try await req.view.render("index", ["title": "Hello Vapor!"])
-    }
-
-    app.get("hello") { req async -> String in
-        "Hello, world!"
-    }
-
-    try app.register(collection: TodoController())
+  try app.register(collection: AdminController(), at: "admin")
+  
+  try app.register(collection: AppController(), at: "app")
+  
+  try app.register(collection: PublicPagesController(), at: "*")
+  
+  app.get { request -> String in
+    return "Hello app!"
+  }
 }

@@ -1,0 +1,14 @@
+#extend("Admin/layout"):
+  #export("content"):
+    <a href="/create">Create project</a>
+      <h1>Projects</h1>
+      #if(count(projects) > 0):
+        #for(project in projects):
+          <p>#(project.projectName) - #(project.subdomain)</p>
+        #endfor
+      #else:
+        <p>No projects</p>
+      #endif
+      
+  #endexport
+#endextend

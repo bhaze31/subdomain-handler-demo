@@ -1,0 +1,8 @@
+#extend("App/layout"):
+  #export("content"):
+    <h1>Available projects</h1>
+    #for(project in projects):
+      <p><strong>#(project.projectName)</strong> - <a href="/projects/#(project.id)">Update</a> - <a href="http://#(project.subdomain).wanderlust.local">Visit</a></p>
+    #endfor
+  #endexport
+#endextend

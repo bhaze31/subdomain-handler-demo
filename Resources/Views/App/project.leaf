@@ -1,0 +1,26 @@
+#extend("App/layout"):
+  #export("content"):
+    <div style="display: flex; flex-direction: column; max-width: 400px; gap: 12px">
+      <h1>#(project.projectName)</h1>
+      <a href="/">Home</a>
+      <form method="post">
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <input name="title" placeholder="title" />
+          <textarea cols=4 rows=4 placeholder="update content" name="content"></textarea>
+          <button type="submit">Add update</button>
+        </div>
+      </form>
+      #if(count(updates) > 0):
+        #for(update in updates):
+          <div style="display: flex; flex-direction: column; max-width: 400px; gap: 0; border: 1px solid gray; padding: 2px">
+            <p style="margin: 0;"><strong>#(update.title)</strong></p>
+            <p style="margin: 0;">#(update.content)</p>
+            <p style="margin: 0;">#(update.createdAt)</p>
+          </div>
+        #endfor
+      #else:
+        <p>No updates</p>
+      #endif
+    </div>
+  #endexport
+#endextend

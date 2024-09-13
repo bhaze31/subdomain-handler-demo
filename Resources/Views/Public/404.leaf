@@ -1,0 +1,9 @@
+#extend("Public/layout"):
+  #export("title"):
+    Missing project
+  #endexport
+
+  #export("content"):
+    <h1>There is no project with that name</h1>
+  #endexport
+#endextend

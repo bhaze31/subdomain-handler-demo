@@ -1,0 +1,11 @@
+#extend("Admin/layout"):
+  #export("content"):
+    <form method="post">
+      <div style="display: flex; flex-direction: column; max-width: 400px; gap: 20px">
+        <input name="name" placeholder="Project name" />
+        <input name="subdomain" placeholder="Subdomain" />
+        <button type="submit">Create project</button>
+      </div>
+    </form>
+  #endexport
+#endextend
