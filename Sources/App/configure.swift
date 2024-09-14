@@ -23,5 +23,5 @@ public func configure(_ app: Application) async throws {
   // register routes
   try routes(app)
   
-  app.middleware.use(SubdomainMiddleware(app: app))
+  app.enableSubdomains()
 }

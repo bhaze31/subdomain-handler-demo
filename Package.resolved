@@ -122,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bhaze31/subdomain-handler.git",
       "state" : {
-        "revision" : "6018545b9a4644936fd3285fff2a15420f70c115",
-        "version" : "0.0.1"
+        "revision" : "8cfccf526c795ee1b735b4ce1166d34daade10c9",
+        "version" : "0.0.2"
       }
     },
     {
