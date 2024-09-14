@@ -118,15 +118,6 @@
       }
     },
     {
-      "identity" : "subdomain-handler",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/bhaze31/subdomain-handler.git",
-      "state" : {
-        "revision" : "8cfccf526c795ee1b735b4ce1166d34daade10c9",
-        "version" : "0.0.2"
-      }
-    },
-    {
       "identity" : "swift-algorithms",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-algorithms.git",
