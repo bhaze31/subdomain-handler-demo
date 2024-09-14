@@ -3,7 +3,6 @@ import Fluent
 import FluentSQLiteDriver
 import Leaf
 import Vapor
-import SubdomainHandler
 
 // configures your application
 public func configure(_ app: Application) async throws {
@@ -22,6 +21,4 @@ public func configure(_ app: Application) async throws {
 
   // register routes
   try routes(app)
-  
-  app.enableSubdomains()
 }
