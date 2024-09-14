@@ -10,6 +10,6 @@ func routes(_ app: Application) throws {
   try app.register(collection: PublicPagesController(), at: "*")
   
   app.get { request -> String in
-    return "Hello app!"
+    return "Hello to the subdomain tutorial people!"
   }
 }
